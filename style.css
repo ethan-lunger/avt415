@@ -2,12 +2,8 @@ body{
 	font-family: Ariel, sans-serif;
 
 }
-h1{
-
-}
-}
-h3, ul, li {
-	margin-left:500px; 
+h3, ul.a {
+padding-left: 100px;
 }
 a:link{
 
