@@ -9,4 +9,10 @@ h1{
 h3, ul, li {
 	text-align: 
 }
+a:link{
+
+}
+a:hover{
+	color: darkred;
+}
 
