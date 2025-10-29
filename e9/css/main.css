@@ -1,0 +1,135 @@
+body{
+	background-color: black;
+}
+.g-body {
+	width: 200px;
+	height: 400px;
+	background-color: ghostwhite;
+	border-top-left-radius: 100px;
+	border-top-right-radius: 100px;
+	border-bottom-left-radius: 20px;
+	border-bottom-right-radius: 20px;
+	position: absolute;
+	top: 50px;
+	left: calc((100vw - 200px) / 2);
+	animation-name: left-right;
+	animation-duration: 5s;
+	 animation-iteration-count: infinite;
+  	animation-timing-function: alternate;
+
+}
+.g-right-eye {
+	width: 30px;
+	height: 30px;
+	background-color: black;
+	border-radius: 100%;
+	position: absolute;
+	top: 50px;
+	left: 120px;
+}
+	.g-right-pupil{
+		width: 15px;
+		height: 15px;
+		background-color: ghostwhite;
+		border-radius: 100%;
+		position: absolute;
+		top: 63px;
+		left: 127px;
+		transform-origin: center top;
+		animation-name: spin;
+		animation-duration: 1s;
+	 animation-iteration-count: infinite;
+  	animation-timing-function: linear;
+}
+.g-left-eye {
+	width: 30px;
+	height: 30px;
+	background-color: black;
+	border-radius: 100%;
+	position: absolute;
+	top: 50px;
+	left: 60px;x
+}
+.g-left-pupil{
+		width: 15px;
+		height: 15px;
+		background-color: ghostwhite;
+		border-radius: 100%;
+		position: absolute;
+		top: 63px;
+		left: 63px;
+		transform-origin: center top;
+		animation-name: back-spin;
+		animation-duration: 1s;
+	 animation-iteration-count: infinite;
+  	animation-timing-function: linear;
+  }
+.g-mouth {
+	width: 100px;
+	height: 50px;
+	border: 5px solid black;
+	border-radius: 100%;
+	position: absolute;
+	top: 120px;
+	left: 60px;
+}
+.g-tongue{
+	width: 50px;
+	height: 70px;
+	background-color: red;
+	border-top-left-radius: 60px;
+	border-top-right-radius: 60px;
+	border-bottom-left-radius: 100px;
+	border-bottom-right-radius: 100px;
+	position: absolute;
+	top: 150px;
+	left: 90px;
+	transform-origin: center top;
+	animation-name: back-spin;
+	animation-duration: 3s;
+	 animation-iteration-count: infinite;
+  	animation-timing-function: linear; 
+}
+@keyframes spin {
+	 from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }   
+}
+@keyframes back-spin {
+	 from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(-360deg);
+    } 
+}
+@keyframes left-right{
+	0%{
+		top: 50px;
+	left: calc((100vw - 200px) / 2);
+	}
+	33% {
+		top: 50px;
+		left: 0vw;
+	}
+	66%{
+		top: 50px;
+		left: calc(100vw - 200px);
+	}
+	100%{
+		top: 50px;
+	left: calc((100vw - 200px) / 2);
+	}
+
+
+	}
+.g-mouth-cover {
+	width: 100px;
+	height: 50px;
+	background-color: ghostwhite;
+	position: absolute;
+	top: 100px;
+	left: 40px;
