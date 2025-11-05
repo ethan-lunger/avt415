@@ -524,13 +524,17 @@ body{
 	top: 50px;
 	left: calc((100vw - 200px) / 2);
 	}
-	33% {
-		top: 500px;
-	left: calc(100vw - 200px);
+	20% {
+	top: 250px;
+	left: calc((100vw - 1500px) / 2);
 		
 	}
-	66%{
+	60%{
 		top: 500px;
+		left: calc((100vw - 200px) / 2);
+	}
+	80%{
+		top: 250px;
 	left: calc(100vw - 200px);		
 	}
 	100%{
