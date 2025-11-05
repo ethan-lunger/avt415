@@ -149,15 +149,228 @@ body{
       left: calc((100vw - 600px) / 2);
     }
 
-.zig-zag-line {
-  --a: 90deg; /* control the angle */
-  --s: 100px; /* size of the zig-zag */
-  --b: 35px;  /* control the thickness */
-  
-  background: #white;
-  height: calc(var(--b) + var(--s)/(2*tan(var(--a)/2)));
-  width: 100%;
-  --_g:var(--s) repeat-x conic-gradient(from calc(var(--a)/-2) at bottom,
-    #0000,#000 1deg calc(var(--a) - 1deg),#0000 var(--a));
-  mask: 50% calc(-1*var(--b))/var(--_g) exclude,50%/var(--_g);
+	.static-1{
+	position: absolute;
+	width: 600px;
+	height:10px;
+	background-color: white;
+	top: 50px;
 }
+.static-1{
+	position: absolute;
+	width: 600px;
+	height:10px;
+	background-color: white;
+	top: 50px;
+}
+.static-2{
+	position: absolute;
+	width: 600px;
+	height:10px;
+	background-color: black;
+	top: 100px;
+}
+.static-3{
+	position: absolute;
+	width: 600px;
+	height:10px;
+	background-color: white;
+	top: 150px;
+}
+.static-4{
+	position: absolute;
+	width: 600px;
+	height:10px;
+	background-color: white;
+	top: 200px;
+}
+.static-5{
+	position: absolute;
+	width: 600px;
+	height:10px;
+	background-color: black;
+	top: 250px;
+}
+.static-6{
+	position: absolute;
+	width: 600px;
+	height:10px;
+	background-color: white;
+	top: 300px;
+}
+.static-7{
+	position: absolute;
+	width: 600px;
+	height:10px;
+	background-color: white;
+	top: 350px;
+}
+.static-8{
+	position: absolute;
+	width: 600px;
+	height:10px;
+	background-color: black;
+	top: 400px;
+}
+
+.g-body-2 {
+	width: 200px;
+	height: 400px;
+	background-color: ghostwhite;
+	border-top-left-radius: 100px;
+	border-top-right-radius: 100px;
+	border-bottom-left-radius: 50px;
+	border-bottom-right-radius: 50px;
+	position: absolute;
+	top: 50px;
+	left: calc((100vw - 200px) / 2);
+	animation-name: up-down;
+	animation-duration: 1s;
+	 animation-iteration-count: infinite;
+  	animation-timing-function: alternate;
+  }
+  	.g-right-eye-2 {
+	width: 30px;
+	height: 30px;
+	background-color: black;
+	border-radius: 100%;
+	position: absolute;
+	top: 50px;
+	left: 120px;
+}
+.g-right-pupil-2{
+		width: 15px;
+		height: 15px;
+		background-color: ghostwhite;
+		border-radius: 100%;
+		position: absolute;
+		top: 63px;
+		left: 127px;
+	}
+.g-left-eye-2 {
+	width: 30px;
+	height: 30px;
+	background-color: black;
+	border-radius: 100%;
+	position: absolute;
+	top: 50px;
+	left: 60px;x
+}
+.g-left-pupil-2{
+		width: 15px;
+		height: 15px;
+		background-color: ghostwhite;
+		border-radius: 100%;
+		position: absolute;
+		top: 63px;
+		left: 68px;
+}
+	.g-mouth-2 {
+	width: 50px;
+	height: 50px;
+	background-color: black;
+	border: 5px solid black;
+	border-radius: 100%;
+	position: absolute;
+	top: 120px;
+	left: 75px;
+}
+@keyframes up-down{
+	0%{
+		top: 50px;
+	left: calc((100vw - 200px) / 2);
+	}
+	33% {
+		top: 500px;
+		left: calc((100vw - 200px) / 2);
+	}
+	66%{
+		top: 0px;
+		left: calc((100vw - 200px) / 2);
+	}
+	100%{
+		top: 50px;
+	left: calc((100vw - 200px) / 2);
+}
+	.g-body-3 {
+	width: 200px;
+	height: 400px;
+	background-color: ghostwhite;
+	border-top-left-radius: 100px;
+	border-top-right-radius: 100px;
+	border-bottom-left-radius: 50px;
+	border-bottom-right-radius: 50px;
+	position: absolute;
+	top: 50px;
+	left: calc((100vw - 500px) / 2);
+	animation-name: up-down-2;
+	animation-duration: 1s;
+	 animation-iteration-count: infinite;
+  	animation-timing-function: alternate;
+  }
+  .g-right-eye-3 {
+	width: 30px;
+	height: 30px;
+	background-color: black;
+	border-radius: 100%;
+	position: absolute;
+	top: 50px;
+	left: 120px;
+}
+.g-right-pupil-3{
+		width: 15px;
+		height: 15px;
+		background-color: ghostwhite;
+		border-radius: 100%;
+		position: absolute;
+		top: 63px;
+		left: 127px;
+	}
+.g-left-eye-3 {
+	width: 30px;
+	height: 30px;
+	background-color: black;
+	border-radius: 100%;
+	position: absolute;
+	top: 50px;
+	left: 60px;x
+}
+.g-left-pupil-3{
+		width: 15px;
+		height: 15px;
+		background-color: ghostwhite;
+		border-radius: 100%;
+		position: absolute;
+		top: 63px;
+		left: 68px;
+	}
+	.g-mouth-3 {
+	width: 50px;
+	height: 50px;
+	background-color: black;
+	border: 5px solid black;
+	border-radius: 100%;
+	position: absolute;
+	top: 120px;
+	left: 75px;
+}
+@keyframes up-down-2{
+	0%{
+		top: 50px;
+	left: calc((100vw - 500px) / 2);
+	}
+	33% {
+		top: 500px;
+	left: calc((100vw - 500px) / 2);
+		
+	}
+	66%{
+		top: 0px;
+	left: calc((100vw - 500px) / 2);
+		
+	}
+	100%{
+		top: 50px;
+	left: calc((100vw - 500px) / 2);
+
+	}
