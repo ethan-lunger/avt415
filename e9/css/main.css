@@ -133,3 +133,31 @@ body{
 	position: absolute;
 	top: 100px;
 	left: 40px;
+}
+.tv {
+      position: relative;
+      width: 600px;
+      height: 450px;
+      margin: 20px 0;
+      background: lightblue;
+      border-radius: 50% / 10%;
+      color: white;
+      text-align: center;
+      text-indent: .1em;
+      position: absolute;
+      top: 200px;
+      left: calc((100vw - 600px) / 2);
+    }
+
+.zig-zag-line {
+  --a: 90deg; /* control the angle */
+  --s: 100px; /* size of the zig-zag */
+  --b: 35px;  /* control the thickness */
+  
+  background: #white;
+  height: calc(var(--b) + var(--s)/(2*tan(var(--a)/2)));
+  width: 100%;
+  --_g:var(--s) repeat-x conic-gradient(from calc(var(--a)/-2) at bottom,
+    #0000,#000 1deg calc(var(--a) - 1deg),#0000 var(--a));
+  mask: 50% calc(-1*var(--b))/var(--_g) exclude,50%/var(--_g);
+}
