@@ -372,6 +372,88 @@ body{
 	}
 	100%{
 		top: 50px;
-	left: calc((100vw - 1500px) / 2);
+	left: calc((100vw - 1500px) / 2);}
 
+}
+.g-body-4 {
+	width: 200px;
+	height: 400px;
+	background-color: ghostwhite;
+	border-top-left-radius: 100px;
+	border-top-right-radius: 100px;
+	border-bottom-left-radius: 50px;
+	border-bottom-right-radius: 50px;
+	position: absolute;
+	top: 50px;
+	left: calc(100vw - 200px);
+	animation-name: up-down-3;
+	animation-duration: 2s;
+	 animation-iteration-count: infinite;
+  	animation-timing-function: alternate;
+  }
+  .g-right-eye-4 {
+	width: 30px;
+	height: 30px;
+	background-color: black;
+	border-radius: 100%;
+	position: absolute;
+	top: 50px;
+	left: 120px;
+}
+.g-right-pupil-4{
+		width: 15px;
+		height: 15px;
+		background-color: ghostwhite;
+		border-radius: 100%;
+		position: absolute;
+		top: 63px;
+		left: 127px;
 	}
+.g-left-eye-4 {
+	width: 30px;
+	height: 30px;
+	background-color: black;
+	border-radius: 100%;
+	position: absolute;
+	top: 50px;
+	left: 60px;x
+}
+.g-left-pupil-4{
+		width: 15px;
+		height: 15px;
+		background-color: ghostwhite;
+		border-radius: 100%;
+		position: absolute;
+		top: 63px;
+		left: 68px;
+	}
+	.g-mouth-4 {
+	width: 50px;
+	height: 50px;
+	background-color: black;
+	border: 5px solid black;
+	border-radius: 100%;
+	position: absolute;
+	top: 120px;
+	left: 75px;
+}
+@keyframes up-down-3{
+	0%{
+		top: 50px;
+	left: calc(100vw - 200px);
+	}
+	33% {
+		top: 500px;
+	left: calc(100vw - 200px);
+		
+	}
+	66%{
+		top: 0px;
+	left: calc(100vw - 200px);
+		
+	}
+	100%{
+		top: 50px;
+	left: calc(100vw - 200px);}
+
+}
